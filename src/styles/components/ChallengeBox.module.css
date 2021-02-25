@@ -30,7 +30,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    line-height: 1.4rem;
+    line-height: 1.4;
     max-width: 70%;
     margin-top: 3rem;
 }
@@ -45,14 +45,6 @@
 
     display: flex;
     flex-direction: column;
-}
-
-.challengeActive header {
-    color: var(--blue);
-    font-weight: 600;
-    font-size: 1.25rem;
-    padding: 0 2rem 1.5rem;
-    border-bottom: 1px solid var(--gray-line);  
 }
 
 .challengeActive header {
