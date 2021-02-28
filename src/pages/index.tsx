@@ -11,11 +11,13 @@ import { ChallengesProvider } from '../contexts/ChallengesContext';
 
 
 interface HomeProps {
-  
+  level: number;
+  currentExperience: number;
+  challengesCompleted: number;
 }
 
 
-export default function Home(props) {
+export default function Home(props: HomeProps) {
   return (
     <ChallengesProvider 
     level={props.level}
@@ -51,9 +53,9 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
 
   return {
     props: {
-      level,
-      currentExperience,
-      challengesCompleted
+      level: Number(level),
+      currentExperience: Number(currentExperience),
+      challengesCompleted: Number(challengesCompleted)
     }
   }
 }
